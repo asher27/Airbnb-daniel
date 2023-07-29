@@ -67,7 +67,7 @@ export default async function getListings(params: IListingsParams) {
     });
 
     return listings;
-  } catch (e) {
-    throw new Error();
+  } catch (e: any) {
+    throw new Error(e);
   }
 }
